@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { FoodsRoutingModule } from './foods-routing.module';
 import { FormFoodComponent } from './form-food/form-food.component';
@@ -15,7 +16,8 @@ import { IndexFoodsComponent } from './index-foods/index-foods.component';
   ],
   imports: [
     CommonModule,
-    FoodsRoutingModule
+    FoodsRoutingModule,
+    FormsModule
   ]
 })
 export class FoodsModule { }

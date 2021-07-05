@@ -1,1 +1,15 @@
-<p>index-foods works!</p>
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-md-6 mx-auto">
+      <app-form-food></app-form-food>
+    </div>
+  </div>
+  <div class="row text-center mt-2">
+    <div class="col-md-6">
+      <app-cart-foods [typeList]="'select'"></app-cart-foods>
+    </div>
+    <div class="col-md-6">
+      <app-cart-foods [typeList]="'shop'"></app-cart-foods>
+    </div>
+  </div>
+</div>

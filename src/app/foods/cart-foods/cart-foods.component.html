@@ -1,1 +1,16 @@
-<p>cart-foods works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>
+        {{titleList}}
+      </h3>
+      <div class="card mt-1" *ngFor="let food of listFoods; let i = index">
+        <div class="card-body">
+          <h4 class="card-title">{{food.name}} | {{food.department}}</h4>
+          <p class="card-text">Cantidad: {{food.quantity}}</p>
+          <button class="btn btn-block btn-primary" (click)="onClickButton(i)">{{ titleButton }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
