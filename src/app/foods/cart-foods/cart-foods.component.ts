@@ -56,4 +56,11 @@ export class CartFoodsComponent implements OnInit {
       this._foods.deleteFoodList(this._foods.arrayShoppingList, index);
     }
   }
+
+  addClassButton():string {
+    if (this.determineList() === 1) {
+      return 'btn-primary';
+    }
+    return 'btn-danger';
+  }
 }

@@ -8,7 +8,7 @@
         <div class="card-body">
           <h4 class="card-title">{{food.name}} | {{food.department}}</h4>
           <p class="card-text">Cantidad: {{food.quantity}}</p>
-          <button class="btn btn-block btn-primary" (click)="onClickButton(i)">{{ titleButton }}</button>
+          <button class="btn btn-block" [ngClass]="addClassButton()" (click)="onClickButton(i)">{{ titleButton }}</button>
         </div>
       </div>
     </div>
